@@ -1,6 +1,7 @@
 package bonusmissionen;
 
-public class _B010_Schachbrett {
+
+public class Schachbrett {
     public static void main(String[] args) {
 
         /*
@@ -19,6 +20,20 @@ public class _B010_Schachbrett {
          * A2 B2 C2 D2 E2 F2 G2 H2
          * A1 B1 C1 D1 E1 F1 G1 H1
          */
-
+    	int count = 9;
+    	for (int i = 1; i <= 8; i++) {
+    		count --;
+			System.out.println(
+					"A" + count + " " + 
+					"B" + count + " " + 
+					"C" + count + " " + 
+					"D" + count + " " + 
+					"E" + count + " " + 
+					"F" + count + " " + 
+					"G" + count + " " + 
+					"H" + count + " ");
+		}
     }
+
 }
+
