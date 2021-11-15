@@ -14,6 +14,7 @@ public class Fakultaet {
 		
 		viaWhile();
 		viaFor();
+		viaDo();
 		
 		System.out.println();
 		System.out.println("\tLetzte Aktualisierung: " + "\n\t14.11.2021 09:40:49 Uhr");
@@ -55,5 +56,19 @@ public class Fakultaet {
 		System.out.println("\tDie gesuchte Zahl ist " + erg + " ?");
 		System.out.println("\t\t(n - 2)");
 		System.out.println("\t-----------------------------");	
+	}
+	
+	private static void viaDo() {
+	
+		int i = 1;
+		int res = 1;
+		System.out.println("\t-----------mit doWhile-----------");
+		do {
+			System.out.print("\t" + i + " -> ");
+			System.out.println(res);
+			i++;
+			res = res * i;
+		} while (res < 1_000_000_000);
+		System.out.println("\t-----------------------------");
 	}
 }
