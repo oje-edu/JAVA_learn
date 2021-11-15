@@ -20,11 +20,11 @@ public class Nettopreis {
     	
 
     }
-	private static int berechneNettoPreis(int netto, int prozent) {
-		return (int)(netto / (100 + prozent) * 100);
+	private static double berechneNettoPreis(double netto, int prozent) {
+		return (double)(netto / (100 + prozent) * 100);
 	}
-	private static int berechneNettoPreis(int gesamt) {
+	private static double berechneNettoPreis(double gesamt) {
 		int prozent = 19;
-		return (int)(gesamt / (100 + prozent) * 100);
+		return (double)(gesamt / (100 + prozent) * 100);
 	}
 }
