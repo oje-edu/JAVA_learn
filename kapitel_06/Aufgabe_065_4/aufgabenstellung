@@ -1,0 +1,20 @@
+Aufgabe 4
+
+Leiten Sie von der Klasse Bruch aus Aufgabe 3 die Subklasse BruchMitSeriennummer ab.
+Ergänzen Sie die Klasse um ein ganzzahliges Attribut mit dem Namen seriennummer.
+In dem Attribut soll jeder Bruch seine Seriennummer speichern.
+Der zuerst erzeugte Bruch soll die Seriennummer 1 erhalten,
+der zweite Bruch die Seriennummer 2 usw.
+Für jeden weiteren Bruch wird die Seriennummer also um 1 erhöht.
+
+Hinweis:
+Verwenden Sie zusätzlich ein statisches Attribut,
+um die jeweils korrekte Seriennum- mer zu ermitteln.
+Die Seriennummer eines Objekts soll
+als unveränderliches (final-) Attribut definiert werden.
+Für die Abfrage der Seriennummer soll die Klasse
+eine Getter-Methode zur Verfügung stellen.
+
+Erstellen Sie ein Programm mit dem Namen Seriennummerntest,
+das fünf Brüche definiert und diese anschließend
+mit ihren Seriennummern in der Konsole ausgibt.

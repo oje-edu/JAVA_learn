@@ -1,0 +1,12 @@
+Aufgabe 1
+
+Erstellen Sie das in Abbildung 8.29 dargestellte Programmfenster
+als Frame mit dem Namen ZollZentimeter.
+Das Programm soll nach der Eingabe einer Längenangabe in Zoll
+die Umrechnung in Zentimeter vornehmen und das Ergebnis in einem Label anzeigen.
+Verwenden Sie möglichst auch die Features zur Vereinfachung
+der Bedienung aus dem Übungsprogramm FahrenheitCelsius,
+das Sie in diesem Kapitel kennengelernt haben.
+Für die Umrechnung gilt: 1 Zoll entspricht 2,54 cm.
+
+Siehe auch Abbildung 8.29 Frame zu Aufgabe 1 (Seite 322)
