@@ -1,4 +1,4 @@
-package aufgaben;
+package uebungen;
 
 import java.util.Random;
 

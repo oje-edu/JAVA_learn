@@ -1,4 +1,4 @@
-package aufgaben;
+package uebungen;
 
 public class Fakultaet {
 	public static void main(String[] args) {

@@ -1,7 +1,7 @@
 package bonusmissionen;
 
 
-public class Schachbrett {
+public class _B010_Schachbrett {
     public static void main(String[] args) {
 
         /*

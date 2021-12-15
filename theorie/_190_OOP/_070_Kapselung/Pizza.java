@@ -5,10 +5,10 @@ public class Pizza {
     // Kapselung - Encapsulation
     
     // Access modifier
-    // public:		class, package, subclass, world
-    // protected:	class, package, subclass
-    // no modifier:     class, package
-    // private:		class
+    // public:					class, package, subclass, world
+    // protected:				class, package, subclass
+    // no modifier (package):   class, package
+    // private:					class
     
     // Ab jetzt überall die Getter & Setter benutzen !!!
     
