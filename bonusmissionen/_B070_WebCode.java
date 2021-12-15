@@ -33,7 +33,7 @@ public class _B070_WebCode {
 	    
 	    for (int i = 0; i < 5; i++) {
 		    String generatedString = random.ints(leftLimit, rightLimit + 1)
-		      .filter(y -> (y <= 57 || y >= 97))
+		      .filter(y -> (y <= 57 || y >= 97) && y != 108)
 		      .limit(targetStringLength)
 		      .collect(StringBuilder::new, StringBuilder::appendCodePoint, StringBuilder::append)
 		      .toString();
@@ -41,5 +41,4 @@ public class _B070_WebCode {
 		    System.out.println("\tWebCode" + (i + 1) + ": " + generatedString);
 	    }
 	}
-
 }

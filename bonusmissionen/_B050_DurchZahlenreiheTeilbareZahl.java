@@ -1,7 +1,5 @@
 package bonusmissionen;
 
-import java.time.Duration;
-import java.time.Instant;
 
 public class _B050_DurchZahlenreiheTeilbareZahl {
 	static long min, sec, milli;
@@ -13,16 +11,9 @@ public class _B050_DurchZahlenreiheTeilbareZahl {
 	}
 	
 	static long lcm(long n) {
-		Instant start = Instant.now();
 		long ans = 1;
 		for (long i = 1; i <= n; i++)
 			ans = (ans * i) / (gcd(ans, i));
-		Instant end = Instant.now();
-		Duration dura = Duration.between(start, end);
-		min = dura.toMinutes();
-		sec = dura.getSeconds() - min * 60;
-		milli = dura.getNano() / 1_000_000;
-		System.out.println("\nRechenZeit: " + min + " Minuten " + sec + " Sekunden " + milli + " Millisekunden");
 		return ans;
 	}
 	
