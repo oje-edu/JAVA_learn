@@ -3,7 +3,7 @@ package uebungen._190_Verzeichnisinhalt;
 import java.io.File;
 import java.util.ArrayList;
 
-public class OJE_FolderItems {
+public class FolderItems {
 
 	public static void main(String[] args) {
 		String path = "src";

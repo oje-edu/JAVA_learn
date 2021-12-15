@@ -105,7 +105,7 @@ public class Mopped {
 	
 	@Override
 	public String toString() {
-		return "Nummer: " + Mopped.counter + "\nHersteller: " + getMarke() + " " + "\nModell: " + getModell() + "\nMit: " + getPs() + "PS" + " entspricht " + this.berechneKw() + "KW" + "\n---------" + "\nWebseite: " + this.getUrl();
+		return "Nummer: " + Mopped.counter + "\nHersteller: " + getMarke() + " " + "\nModell: " + getModell() + "\nMit: " + getPs() + "PS" + " entspricht " + berechneKw() + "KW" + "\n---------" + "\nWebseite: " + getUrl();
 	}
 	
 	// Normale Methode

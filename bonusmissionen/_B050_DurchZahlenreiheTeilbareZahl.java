@@ -1,4 +1,4 @@
-package bonusmissionen._B050_DurchZahlenreiheTeilbareZahl.OJE;
+package bonusmissionen;
 
 public class _B050_DurchZahlenreiheTeilbareZahl {
 
