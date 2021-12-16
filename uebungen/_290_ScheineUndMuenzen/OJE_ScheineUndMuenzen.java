@@ -6,6 +6,7 @@ public class OJE_ScheineUndMuenzen {
 			0.05, 0.02, 0.01 };
 	// private double[] euroArray = new double[8];
 	static double rechenGenauigkeit = 0.0001;
+	static double gewechselt = 0.0;
 
 	public static void main(String[] args) {
     /*
@@ -23,19 +24,25 @@ public class OJE_ScheineUndMuenzen {
     * System.out.println(betraege(99.95)); // 50.00, 20.00, 20.00, 5.00,
     * 									   // 2.00, 2.00, 0.50, 0.20, 0.20, 0.05
     * 
-    *  CODE FROM: https://www.programmieraufgaben.ch/aufgabe/geldbetrag/6juh7y3z#solution-code-43
     */
-	double betrag = 53.26;
-	int[] anzahlen = betraege(betrag);
-	ausgabe(anzahlen);
-
+	//double betrag = 53.26;
+	//int[] anzahlen = null;// = betraege(betrag);
+	//ausgabe(anzahlen);
+		System.out.println(betraege(53.26));
 	}
 
 	static int[] betraege(double betrag) {
 		int[] anzahlen = new int[euroArray.length];
 		for (int i = 0; i < euroArray.length; i++) {
 			betrag = reduziere(betrag, i, anzahlen);
+			gewechselt = euroArray[i];
+			double aktuellerWert = euroArray[i];
+			while (betrag + rechenGenauigkeit > aktuellerWert) {
+				betrag = betrag - aktuellerWert;
+				anzahlen[i]++;
+			}
 		}
+
 		return anzahlen;
 	}
 
@@ -46,20 +53,6 @@ public class OJE_ScheineUndMuenzen {
 			anzahlen[i]++;
 		}
 		return betrag;
-	}
-
-	static void ausgabe(int[] betrag) {
-		for (int i = 0; i < euroArray.length; i++) {
-			bedingteAusgabe(betrag[i], i);
-		}
-	}
-
-	static void bedingteAusgabe(int anzahl, int index) {
-		if (anzahl > 0) {
-			System.out.print(anzahl + " x EURO ");
-			formattierteBetragsausgabe(euroArray[index]);
-			System.out.println();
-		}
 	}
 
 	static void formattierteBetragsausgabe(double d) {
