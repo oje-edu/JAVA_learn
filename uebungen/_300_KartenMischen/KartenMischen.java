@@ -1,20 +1,11 @@
 package uebungen._300_KartenMischen;
 
 import java.util.ArrayList;
-import java.util.Collections;
 
-
-
-public class OJE_KartenMischen {
-	static ArrayList<String> karten = new ArrayList<>();
-	static int change;
-
+public class KartenMischen {
+	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		karten();
-	}
-
-	static void karten() {	
+		ArrayList<String> karten = new ArrayList<>();
 		karten.add("[Kreuz, Sieben]");
 		karten.add("[Kreuz, Acht]");
 		karten.add("[Kreuz, Neun]");
@@ -54,7 +45,7 @@ public class OJE_KartenMischen {
 		System.out.println("Ungemischt:");
 
 
-		for (int i = 0; i < 32; i++) {
+		for (int i = 0; i < karten.size(); i++) {
 			if (i % 8 == 0) {
 				System.out.print("\n");
 			}
@@ -64,10 +55,19 @@ public class OJE_KartenMischen {
 		
 
 		// For testing
-		Collections.shuffle(karten);
+		// Collections.shuffle(karten);
 		// TODO maybe the other 50% of the quest :-)
 		System.out.println("Gemischt:");
-		for (int i = 0; i < 32; i++) {
+		// -- thx to Mr. G ---
+		for (int s = 0; s < 100; s++) {
+			int rnd1 = (int)Math.floor(Math.random()*32);
+			int rnd2 = (int)Math.floor(Math.random()*32);
+			String shuffle = karten.get(rnd2);
+			karten.set(rnd2, karten.get(rnd1));
+			karten.set(rnd1, shuffle);
+		}
+		// ---
+		for (int i = 0; i < karten.size(); i++) {
 			if (i % 8 == 0) {
 				System.out.print("\n");
 			}
