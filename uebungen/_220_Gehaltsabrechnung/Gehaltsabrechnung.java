@@ -3,7 +3,7 @@ package uebungen._220_Gehaltsabrechnung;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class OJE_Gehaltsabrechnung {
+public class Gehaltsabrechnung {
 
 	public static void main(String[] args) {
 

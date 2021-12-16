@@ -2,11 +2,11 @@ package uebungen._180_Lottoziehung;
 
 import java.util.Random;
 
-public class LottoKingOJE {
+public class LottoKing {
 	
 
 	public static void main(String[] args) {
-		int[] myNumZ = { 5, 11, 2, 8, 46, 30 };
+		int[] myNumZ = { 22, 14, 2, 8, 46, 30 };
 
 		numbaZ(myNumZ);
 	}
@@ -21,9 +21,9 @@ public class LottoKingOJE {
 			System.out.println("\n");
 
 			int[] rndNumbaZ = new int[6];
+			Random mygenerator = new Random();
 			for (int i = 0; i < 6; i++) {
-				Random mygenerator = new Random();
-				rndNumbaZ[i] = mygenerator.nextInt(48) + 1;
+				rndNumbaZ[i] = mygenerator.nextInt(49) + 1;
 				// check if number is duplicate
 				for (int j = 0; j < i; j++) {
 					if (rndNumbaZ[i] == rndNumbaZ[j]) {

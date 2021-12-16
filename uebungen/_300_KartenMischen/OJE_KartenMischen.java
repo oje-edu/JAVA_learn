@@ -1,12 +1,79 @@
 package uebungen._300_KartenMischen;
 
+import java.util.ArrayList;
+import java.util.Collections;
+
+
+
 public class OJE_KartenMischen {
+	static ArrayList<String> karten = new ArrayList<>();
+	static int change;
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+		karten();
 	}
 
+	static void karten() {	
+		karten.add("[Kreuz, Sieben]");
+		karten.add("[Kreuz, Acht]");
+		karten.add("[Kreuz, Neun]");
+		karten.add("[Kreuz, Zehn]");
+		karten.add("[Kreuz, Bube]");
+		karten.add("[Kreuz, Dame]");
+		karten.add("[Kreuz, König]");
+		karten.add("[Kreuz, Ass]");
+
+		karten.add("[Pik, Sieben]");
+		karten.add("[Pik, Acht]");
+		karten.add("[Pik, Neun]");
+		karten.add("[Pik, Zehn]");
+		karten.add("[Pik, Bube]");
+		karten.add("[Pik, Dame]");
+		karten.add("[Pik, König]");
+		karten.add("[Pik, Ass]");
+
+		karten.add("[Herz, Sieben]");
+		karten.add("[Herz, Acht]");
+		karten.add("[Herz, Neun]");
+		karten.add("[Herz, Zehn]");
+		karten.add("[Herz, Bube]");
+		karten.add("[Herz, Dame]");
+		karten.add("[Herz, König]");
+		karten.add("[Herz, Ass]");
+
+		karten.add("[Karo, Sieben]");
+		karten.add("[Karo, Acht]");
+		karten.add("[Karo, Neun]");
+		karten.add("[Karo, Zehn]");
+		karten.add("[Karo, Bube]");
+		karten.add("[Karo, Dame]");
+		karten.add("[Karo, König]");
+		karten.add("[Karo, Ass]");
+
+		System.out.println("Ungemischt:");
+
+
+		for (int i = 0; i < 32; i++) {
+			if (i % 8 == 0) {
+				System.out.print("\n");
+			}
+			System.out.print(karten.get(i) + " ");
+		}
+		System.out.println("\n");
+		
+
+		// For testing
+		Collections.shuffle(karten);
+		// TODO maybe the other 50% of the quest :-)
+		System.out.println("Gemischt:");
+		for (int i = 0; i < 32; i++) {
+			if (i % 8 == 0) {
+				System.out.print("\n");
+			}
+			System.out.print(karten.get(i) + " ");
+		}
+	}
 }
 
 
@@ -25,7 +92,7 @@ public class OJE_KartenMischen {
  * (Mischen ohne Collections.shuffle())
  *
  * Die Ausgabe könnte folgendermaßen aussehen:
- * 
+ *
 Ungemischt:
 [Kreuz, Sieben] [Kreuz, Acht]   [Kreuz, Neun]   [Kreuz, Zehn]   [Kreuz, Bube]   [Kreuz, Dame]   [Kreuz, König]  [Kreuz, Ass]
 [Pik, Sieben]   [Pik, Acht]     [Pik, Neun]     [Pik, Zehn]     [Pik, Bube]     [Pik, Dame]     [Pik, König]    [Pik, Ass]

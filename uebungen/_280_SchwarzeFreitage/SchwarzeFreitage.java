@@ -5,9 +5,10 @@ import java.util.Calendar;
 import java.util.GregorianCalendar;
 import java.util.List;
 
-public class OJE_SchwarzeFreitage {
+public class SchwarzeFreitage {
 
 	private static List<String> fridayHistory;
+
 	
 	public static void main(String[] args) {
         /*
@@ -20,17 +21,11 @@ public class OJE_SchwarzeFreitage {
 		int startYear = 1990;
 		int endYear = 1995;
 
-		System.out.println("\tAnfangsjahr: " + startYear + " Endjahr: " + endYear + "\n");
-
-		new OJE_SchwarzeFreitage(startYear, endYear);
-
-		for (String fridays : fridayHistory) {
-			System.out.println(fridays);
-		}
+		output(startYear, endYear);
 	}
 
-	public OJE_SchwarzeFreitage(int startYear, int endYear) {
-		OJE_SchwarzeFreitage.fridayHistory = new ArrayList<String>();
+	public SchwarzeFreitage(int startYear, int endYear) {
+		SchwarzeFreitage.fridayHistory = new ArrayList<String>();
 		searchFridays(startYear, endYear);
 	}
 
@@ -44,6 +39,14 @@ public class OJE_SchwarzeFreitage {
 				}
 			}
 			startYear++;
+		}
+	}
+	
+	static void output(int start, int end) {
+		System.out.println("\tAnfangsjahr: " + start + " Endjahr: " + end + "\n");
+		new SchwarzeFreitage(start, end);
+		for (String fridays : fridayHistory) {
+			System.out.println(fridays);
 		}
 	}
 }

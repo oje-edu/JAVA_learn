@@ -1,6 +1,6 @@
 package uebungen._250_Roboter2;
 
-public class OJE_Roboter2 {
+public class Roboter2 {
 
 	public static void main(String[] args) {
 		

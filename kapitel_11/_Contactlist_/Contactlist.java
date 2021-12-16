@@ -24,7 +24,7 @@ import java.awt.event.ActionEvent;
 import javax.swing.ListSelectionModel;
 
 @SuppressWarnings("serial")
-public class OJE_Contactlist extends JFrame {
+public class Contactlist extends JFrame {
 
 	private JPanel cPane;
 	private JTextField tfLastname;
@@ -45,7 +45,7 @@ public class OJE_Contactlist extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					OJE_Contactlist frame = new OJE_Contactlist();
+					Contactlist frame = new Contactlist();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -57,7 +57,7 @@ public class OJE_Contactlist extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public OJE_Contactlist() {
+	public Contactlist() {
 		setTitle("Kontaktliste");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 540, 308);
