@@ -1,8 +1,8 @@
-package uebungen._300_390_._350_PrimzahlenRueckwaerts;
+package _350_PrimzahlenRueckwaerts;
 
 import static java.lang.Math.*;
 
-public class PrimzahlenRueckwaerts {
+public class OJE_PrimzahlenRueckwaerts {
 	static int num = 0;
 	static int rebmun = 0;
 
