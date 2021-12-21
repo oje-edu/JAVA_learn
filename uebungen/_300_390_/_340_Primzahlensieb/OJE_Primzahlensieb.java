@@ -6,7 +6,7 @@ public class OJE_Primzahlensieb {
 	    /*
 	     * Primzahlensieb (Sieb des Eratosthenes)
 	     *
-	     * Schreibe eine Programm, das alle Primzahlen bis zur Zahl n ermittelt
+	     * Schreibe ein Programm, das alle Primzahlen bis zur Zahl n ermittelt
 	     * und diese in einer Tabelle mit zehn Spalten ausgibt.
 	     *
 	     * Die Primzahlen sollen mithilfe des Siebs des Eratosthenes ermittelt werden:

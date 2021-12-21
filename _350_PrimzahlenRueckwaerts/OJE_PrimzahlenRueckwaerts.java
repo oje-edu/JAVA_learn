@@ -34,7 +34,7 @@ public class OJE_PrimzahlenRueckwaerts {
 			return false;
 		}
 		rebmun = reverse(number);
-		return isPrim(number) && number != rebmun;
+		return isPrim(rebmun) && number != rebmun;
 	}
 	
 	static boolean isPrim(int number) {
@@ -50,7 +50,7 @@ public class OJE_PrimzahlenRueckwaerts {
 	
 	static int reverse(int number) {
 		int rev = 0;
-		for (int i = 0; i <= number; i++) {
+		while(number > 0) {
 			int mod = number % 10;
 			rev = rev * 10 + mod;
 			number = number / 10;
