@@ -1,6 +1,8 @@
 package _340_Primzahlensieb;
 
 public class OJE_Primzahlensieb {
+	
+	static final int N=100;
 
 	public static void main(String[] args) {
 	    /*
@@ -26,6 +28,35 @@ public class OJE_Primzahlensieb {
 	     * 
 	     */
 		
-		System.out.println("Aufgabe mach ich ned");
+        int curNum;
+        int curPrim = 0;
+        int[] primArr;
+        System.out.println("Ausgabe der Primzahlen bis "+ N +"\n");
+        /*
+         * Zahlen mittels Array berechnen/speichern
+         * (N+1)/2 reichen garantiert für alle Grenzwerte ab 2!
+         */
+        primArr=new int[(N+1)/2];
+        // Alle Zahlen durchgehen
+        for(curNum = 2; curNum <= N; curNum++) {
+            int i=0;
+            int range=(int)Math.sqrt(curNum); // (Original-Sieb sucht bis curNum/2)
+            while(i < curPrim && primArr[i] <= range && curNum % primArr[i] != 0) {
+                i++;
+            }
+            if(i >= curPrim || primArr[i] > range) { // Ist Primzahl --> Eintragen
+                primArr[curPrim++] = curNum;
+            }
+        }
+
+        // Ausgeben
+        System.out.print("Array:  ");
+        for(curNum = 0; curNum < curPrim; curNum++) {
+            System.out.print(primArr[curNum] + " ");
+        }
+        System.out.println();
+        System.out.println();
+        System.out.println("Anzahl der Primzahlen bis "+ N +": " +curPrim);
+        System.out.println("Fuellgrad:  " + ((float)curPrim) / primArr.length * 100 + " %");
 	}
 }
