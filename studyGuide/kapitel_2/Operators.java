@@ -2,6 +2,7 @@ package studyGuide.kapitel_2;
 
 public class Operators {
 
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		
 		// Binary Arithmetic Operators
